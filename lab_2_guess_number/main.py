@@ -13,7 +13,7 @@ def main():
                          '"bin", если алгоритм бинарного поиска: ')
         print()
 
-    res = guess_number(list_generator(d_start, d_end), target, alg_type)
+    res: tuple = guess_number(list_generator(d_start, d_end), target, alg_type)
     print('Число', res[0],
           'угадано. Потребовалось шагов:', res[1])
 
@@ -36,9 +36,6 @@ def list_generator(st, fin) -> list[int]:
 def par_is_corr(par):
     """Функция par_is_corr()
     Проверяет, является ли введенный параметр целым числом.
-    Т.е. является ли число int, или str, которое можно преобразовать в int,
-    или float с нулевой дробной частью.
-    Если параметр подходит, то преобразует его в int. Иначе, вызывает TypeError.
 
     :param par: Переменная любого типа данных;
     :return: par в формате int или TypeError.
@@ -63,10 +60,10 @@ def guess_number(diap: list, target, alg_type: str ='seq') -> tuple[int, int]:
     Получает на вход список чисел, число для поиска и тип алгоритма, по которому нужно искать число.
     Содержит проверки на правильность ввода параметров.
 
-    :param diap: список диапазона целых чисел;
-    :param target: целое число, которое нужно найти;
-    :param alg_type: тип алгоритма: последовательный (seq) или бинарный (bin);
-    :return: кортеж из числа, которое нужно было найти, и количество проверок в ходе поиска.
+    :param diap: Список диапазона целых чисел;
+    :param target: Целое число, которое нужно найти;
+    :param alg_type: Тип алгоритма: последовательный (seq) или бинарный (bin);
+    :return: Кортеж из числа, которое нужно было найти, и количество проверок в ходе поиска.
     """
     target = par_is_corr(target)
     if type(diap) != list:

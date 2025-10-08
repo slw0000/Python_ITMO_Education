@@ -1,9 +1,10 @@
 import unittest
 from main import guess_number, list_generator, par_is_corr
 
+
 class TestGuessNumber(unittest.TestCase):
     """
-    Функция TestGuessNumber тестирует основную функцию guess_number и вспомогательные
+    Класс TestGuessNumber тестирует основную функцию guess_number и вспомогательные
     для неё list_generator и par_is_cor на правильность вывода функций, правильность вызова ошибок.
     """
 
