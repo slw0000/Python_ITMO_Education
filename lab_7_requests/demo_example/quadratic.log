@@ -1,0 +1,3 @@
+INFO: Solving equation: 1x^2 + 1x + 4 = 0
+DEBUG: Discriminant: -15
+WARNING: Discriminant < 0: no real roots

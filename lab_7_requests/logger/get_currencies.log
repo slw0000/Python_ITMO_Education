@@ -1,0 +1,6 @@
+INFO: Вызов функции get_currencies(['USD', 'EUR', 'GBR'], url='https://google.com')
+DEBUG: Starting new HTTPS connection (1): google.com:443
+DEBUG: https://google.com:443 "GET / HTTP/1.1" 301 220
+DEBUG: Starting new HTTPS connection (1): www.google.com:443
+DEBUG: https://www.google.com:443 "GET / HTTP/1.1" 200 None
+ERROR: Ошибка в get_currencies: JSONDecodeError: Expecting value: line 1 column 1 (char 0)

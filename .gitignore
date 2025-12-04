@@ -8,3 +8,8 @@
 /lab_4_time_compare/.idea
 /lab_5_bin_tree_iterative/.idea
 /lab_5_bin_tree_iterative/__pycache__
+lab_7_requests/.idea
+lab_7_requests/__pycache__
+lab_7_requests/logger/__pycache__
+lab_7_requests/tests/__pycache__
+.DS_Store
