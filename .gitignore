@@ -13,3 +13,16 @@ lab_7_requests/__pycache__
 lab_7_requests/logger/__pycache__
 lab_7_requests/tests/__pycache__
 .DS_Store
+lab_8_web_app/.idea
+lab_8_web_app/__pycache__
+lab_8_web_app/models/__pycache__
+lab_8_web_app/tests/__pycache__
+lab_8_web_app/utilites/__pycache__
+lab_8_web_app/utilites/logger/__pycache__
+lab_9_app_with_db/.idea
+lab_9_app_with_db/__pycache__
+lab_9_app_with_db/controllers/__pycache__
+lab_9_app_with_db/models/__pycache__
+lab_9_app_with_db/tests/__pycache__
+lab_9_app_with_db/utilites/__pycache__
+lab_9_app_with_db/utilites/logger/__pycache__

@@ -1,0 +1,51 @@
+INFO: Вызов функции get_value_info('EUR')
+DEBUG: Starting new HTTPS connection (1): www.cbr-xml-daily.ru:443
+DEBUG: https://www.cbr-xml-daily.ru:443 "GET /daily_json.js HTTP/1.1" 200 2310
+INFO: Функция get_value_info отработала успешно! Результат: {'ID': 'R01239', 'NumCode': '978', 'CharCode': 'EUR', 'Nominal': 1, 'Name': 'Евро', 'Value': 88.7028, 'Previous': 89.9011}
+INFO: Вызов функции get_value_info('USD')
+DEBUG: Starting new HTTPS connection (1): www.cbr-xml-daily.ru:443
+DEBUG: https://www.cbr-xml-daily.ru:443 "GET /daily_json.js HTTP/1.1" 200 2310
+INFO: Функция get_value_info отработала успешно! Результат: {'ID': 'R01235', 'NumCode': '840', 'CharCode': 'USD', 'Nominal': 1, 'Name': 'Доллар США', 'Value': 76.0937, 'Previous': 76.9708}
+INFO: Вызов функции get_value_info('USD')
+DEBUG: Starting new HTTPS connection (1): www.cbr-xml-daily.ru:443
+DEBUG: https://www.cbr-xml-daily.ru:443 "GET /daily_json.js HTTP/1.1" 200 2310
+INFO: Функция get_value_info отработала успешно! Результат: {'ID': 'R01235', 'NumCode': '840', 'CharCode': 'USD', 'Nominal': 1, 'Name': 'Доллар США', 'Value': 76.0937, 'Previous': 76.9708}
+INFO: Вызов функции get_currencies(['USD', 'EUR'], url='https://www.notcorrectapi.ru')
+DEBUG: Starting new HTTPS connection (1): www.notcorrectapi.ru:443
+ERROR: Ошибка в get_currencies: ConnectionError: HTTPSConnectionPool(host='www.notcorrectapi.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x107464910>: Failed to resolve 'www.notcorrectapi.ru' ([Errno 8] nodename nor servname provided, or not known)"))
+INFO: Вызов функции get_currencies(['USD', 'EUR'])
+DEBUG: Starting new HTTPS connection (1): www.cbr-xml-daily.ru:443
+DEBUG: https://www.cbr-xml-daily.ru:443 "GET /daily_json.js HTTP/1.1" 200 2310
+INFO: Функция get_currencies отработала успешно! Результат: {'USD': 76.0937, 'EUR': 88.7028}
+INFO: Вызов функции get_currencies(['USD', 'EUR'], url='https://google.com')
+DEBUG: Starting new HTTPS connection (1): google.com:443
+DEBUG: https://google.com:443 "GET / HTTP/1.1" 301 220
+DEBUG: Starting new HTTPS connection (1): www.google.com:443
+DEBUG: https://www.google.com:443 "GET / HTTP/1.1" 200 None
+ERROR: Ошибка в get_currencies: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO: Вызов функции get_currencies(['USD', 'EUR', 'GBR'])
+DEBUG: Starting new HTTPS connection (1): www.cbr-xml-daily.ru:443
+DEBUG: https://www.cbr-xml-daily.ru:443 "GET /daily_json.js HTTP/1.1" 200 2310
+INFO: Функция get_currencies отработала успешно! Результат: {'USD': 76.0937, 'EUR': 88.7028, 'GBR': "Код валюты 'GBR' не найден."}
+INFO: Вызов функции get_currencies(['USD', 'EUR', 'GBR'])
+DEBUG: Starting new HTTPS connection (1): www.cbr-xml-daily.ru:443
+DEBUG: https://www.cbr-xml-daily.ru:443 "GET /daily_json.js HTTP/1.1" 200 2310
+INFO: Функция get_currencies отработала успешно! Результат: {'USD': 76.0937, 'EUR': 88.7028, 'GBR': "Код валюты 'GBR' не найден."}
+INFO: Вызов функции get_currencies(['USD', 'EUR'])
+DEBUG: Starting new HTTPS connection (1): www.cbr-xml-daily.ru:443
+DEBUG: https://www.cbr-xml-daily.ru:443 "GET /daily_json.js HTTP/1.1" 200 2310
+INFO: Функция get_currencies отработала успешно! Результат: {'USD': 76.0937, 'EUR': 88.7028}
+INFO: Вызов функции get_currencies(['USD'], url='https://www.notcorrectapi.ru')
+DEBUG: Starting new HTTPS connection (1): www.notcorrectapi.ru:443
+ERROR: Ошибка в get_currencies: ConnectionError: HTTPSConnectionPool(host='www.notcorrectapi.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x107464b90>: Failed to resolve 'www.notcorrectapi.ru' ([Errno 8] nodename nor servname provided, or not known)"))
+INFO: Вызов функции get_currencies(['USD', 'EUR'])
+INFO: Вызов функции get_currencies(['USD', 'EUR'])
+DEBUG: Starting new HTTPS connection (1): www.cbr-xml-daily.ru:443
+DEBUG: https://www.cbr-xml-daily.ru:443 "GET /daily_json.js HTTP/1.1" 200 2310
+INFO: Функция get_currencies отработала успешно! Результат: {'USD': 76.0937, 'EUR': 88.7028}
+INFO: Функция get_currencies отработала успешно! Результат: {'USD': 76.0937, 'EUR': 88.7028}
+INFO: Вызов функции get_currencies(['USD'], url='https://www.notcorrectapi.ru')
+INFO: Вызов функции get_currencies(['USD'], url='https://www.notcorrectapi.ru')
+DEBUG: Starting new HTTPS connection (1): www.notcorrectapi.ru:443
+ERROR: Ошибка в get_currencies: ConnectionError: HTTPSConnectionPool(host='www.notcorrectapi.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x107464a50>: Failed to resolve 'www.notcorrectapi.ru' ([Errno 8] nodename nor servname provided, or not known)"))
+ERROR: Ошибка в get_currencies: ConnectionError: HTTPSConnectionPool(host='www.notcorrectapi.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x107464a50>: Failed to resolve 'www.notcorrectapi.ru' ([Errno 8] nodename nor servname provided, or not known)"))
