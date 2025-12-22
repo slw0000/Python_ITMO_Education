@@ -26,3 +26,7 @@ lab_9_app_with_db/models/__pycache__
 lab_9_app_with_db/tests/__pycache__
 lab_9_app_with_db/utilites/__pycache__
 lab_9_app_with_db/utilites/logger/__pycache__
+lab_10/.idea
+lab_10/__pycache__
+lab_10/tests/__pycache__
+lab_10/.venv
