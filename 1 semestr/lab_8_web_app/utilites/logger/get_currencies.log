@@ -1,0 +1,36 @@
+INFO: Вызов функции get_value_info('USD')
+DEBUG: Starting new HTTPS connection (1): www.cbr-xml-daily.ru:443
+DEBUG: https://www.cbr-xml-daily.ru:443 "GET /daily_json.js HTTP/1.1" 200 2122
+INFO: Функция get_value_info отработала успешно! Результат: {'ID': 'R01235', 'NumCode': '840', 'CharCode': 'USD', 'Nominal': 1, 'Name': 'Доллар США', 'Value': 75.9246, 'Previous': 76.0382}
+INFO: Вызов функции get_value_info('EUR')
+DEBUG: Starting new HTTPS connection (1): www.cbr-xml-daily.ru:443
+DEBUG: https://www.cbr-xml-daily.ru:443 "GET /daily_json.js HTTP/1.1" 200 2122
+INFO: Функция get_value_info отработала успешно! Результат: {'ID': 'R01239', 'NumCode': '978', 'CharCode': 'EUR', 'Nominal': 1, 'Name': 'Евро', 'Value': 89.0589, 'Previous': 88.7898}
+INFO: Вызов функции get_value_info('GBP')
+DEBUG: Starting new HTTPS connection (1): www.cbr-xml-daily.ru:443
+DEBUG: https://www.cbr-xml-daily.ru:443 "GET /daily_json.js HTTP/1.1" 200 2122
+INFO: Функция get_value_info отработала успешно! Результат: {'ID': 'R01035', 'NumCode': '826', 'CharCode': 'GBP', 'Nominal': 1, 'Name': 'Фунт стерлингов', 'Value': 102.3312, 'Previous': 102.1041}
+INFO: Вызов функции get_value_info('USD')
+DEBUG: Starting new HTTPS connection (1): www.cbr-xml-daily.ru:443
+DEBUG: https://www.cbr-xml-daily.ru:443 "GET /daily_json.js HTTP/1.1" 200 2122
+INFO: Функция get_value_info отработала успешно! Результат: {'ID': 'R01235', 'NumCode': '840', 'CharCode': 'USD', 'Nominal': 1, 'Name': 'Доллар США', 'Value': 75.9246, 'Previous': 76.0382}
+INFO: Вызов функции get_value_info('EUR')
+DEBUG: Starting new HTTPS connection (1): www.cbr-xml-daily.ru:443
+DEBUG: https://www.cbr-xml-daily.ru:443 "GET /daily_json.js HTTP/1.1" 200 2122
+INFO: Функция get_value_info отработала успешно! Результат: {'ID': 'R01239', 'NumCode': '978', 'CharCode': 'EUR', 'Nominal': 1, 'Name': 'Евро', 'Value': 89.0589, 'Previous': 88.7898}
+INFO: Вызов функции get_value_info('GBP')
+DEBUG: Starting new HTTPS connection (1): www.cbr-xml-daily.ru:443
+DEBUG: https://www.cbr-xml-daily.ru:443 "GET /daily_json.js HTTP/1.1" 200 2122
+INFO: Функция get_value_info отработала успешно! Результат: {'ID': 'R01035', 'NumCode': '826', 'CharCode': 'GBP', 'Nominal': 1, 'Name': 'Фунт стерлингов', 'Value': 102.3312, 'Previous': 102.1041}
+INFO: Вызов функции get_currencies(['USD'])
+DEBUG: Starting new HTTPS connection (1): www.cbr-xml-daily.ru:443
+DEBUG: https://www.cbr-xml-daily.ru:443 "GET /daily_json.js HTTP/1.1" 200 2122
+INFO: Функция get_currencies отработала успешно! Результат: {'USD': 75.9246}
+INFO: Вызов функции get_currencies(['EUR'])
+DEBUG: Starting new HTTPS connection (1): www.cbr-xml-daily.ru:443
+DEBUG: https://www.cbr-xml-daily.ru:443 "GET /daily_json.js HTTP/1.1" 200 2122
+INFO: Функция get_currencies отработала успешно! Результат: {'EUR': 89.0589}
+INFO: Вызов функции get_currencies(['GBP'])
+DEBUG: Starting new HTTPS connection (1): www.cbr-xml-daily.ru:443
+DEBUG: https://www.cbr-xml-daily.ru:443 "GET /daily_json.js HTTP/1.1" 200 2122
+INFO: Функция get_currencies отработала успешно! Результат: {'GBP': 102.3312}
